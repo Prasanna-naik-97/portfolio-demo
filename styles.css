@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("assets/background.jpg") no-repeat center center/cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: #2c3e50;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f39c12 !important;
+}
+
+.hero {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+.hero a {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Section Spacing */
+section {
+  padding: 60px 0;
+}
+
+/* About Section Styles */
+#about img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#about .about-details {
+  display: flex;
+  align-items: center;
+}
+
+/* Animation for Sections */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#projects img {
+  max-height: 280px;
+}
+
+#projects .card {
+  background-color: #000;
+}
+
+.site-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-icon-container img {
+  max-width: 40px;
+  padding-right: 6px;
+}
